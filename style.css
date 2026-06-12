@@ -1,82 +1,119 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f6f9;
-    color: #333;
-    line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
 }
 
 header {
-    background-color: #232f3e;
-    color: white;
-    text-align: center;
-    padding: 40px;
+  background-color: #232f3e;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
 }
 
 header h1 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 0.95rem;
 }
 
 .container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
 }
 
 .card {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-
-    box-shadow:
-    0 2px 5px rgba(0,0,0,.1);
+  background: white;
+  padding: 24px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
 }
 
 .card h2 {
-    margin-bottom: 15px;
-    color: #232f3e;
+  margin-bottom: 15px;
+  color: #232f3e;
+  border-bottom: 2px solid #ff9900;
+  padding-bottom: 8px;
 }
 
 .card h3 {
-    margin-top: 10px;
+  margin-top: 15px;
+  color: #232f3e;
+}
+
+ul {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.job {
+  margin-bottom: 25px;
+}
+
+.date {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 8px;
 }
 
 .skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
 }
 
 .skills span {
-    background: #232f3e;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 5px;
-}
-
-.progress-bar {
-    width: 100%;
-    background-color: #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 15px 0;
-}
-
-.progress {
-    width: 85%;
-    height: 25px;
-    background-color: #ff9900;
+  background: #232f3e;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 0.9rem;
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background: #232f3e;
-    color: white;
+  text-align: center;
+  padding: 20px;
+  background: #232f3e;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .contact {
+    flex-direction: column;
+    gap: 5px;
+  }
 }
