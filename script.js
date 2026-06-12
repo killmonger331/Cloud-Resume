@@ -1,12 +1,8 @@
-window.onload = async function () {
+document.addEventListener("DOMContentLoaded", () => {
 
-    const response = await fetch(
-        "API_URL_GOES_HERE"
-    );
+    const visitorCount = document.getElementById("visitorCount");
 
-    const count = await response.text();
+    // Placeholder value until Lambda/API is built
+    visitorCount.textContent = "1";
 
-    document.getElementById(
-        "counter"
-    ).innerText = count;
-};
+});

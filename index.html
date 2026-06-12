@@ -1,22 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Richard Morales</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Morales | Cloud Engineer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<header>
     <h1>Richard Morales</h1>
+    <p>Network Engineer | AWS Cloud Engineer (In Progress) | USMC Veteran</p>
+</header>
 
-    <h2>Cloud & Network Engineer</h2>
+<section class="container">
 
-    <p>
-        CCNA | Security+ | AWS Solutions Architect Associate Candidate
-    </p>
+    <section class="card">
+        <h2>About Me</h2>
+        <p>
+            Experienced Network Engineer and former United States Marine Corps
+            Sergeant with a background in enterprise networking, systems
+            administration, and IT operations. Currently pursuing AWS cloud
+            certifications and building cloud-native projects focused on
+            automation, infrastructure as code, and serverless technologies.
+        </p>
+    </section>
 
-    <p>
-        Visitor Count:
-        <span id="counter">Loading...</span>
-    </p>
+    <section class="card">
+        <h2>Certifications</h2>
+        <ul>
+            <li>CCNA</li>
+            <li>CompTIA Security+</li>
+            <li>CompTIA Network+</li>
+            <li>CompTIA A+</li>
+            <li>LPI Linux Essentials</li>
+            <li>AWS Solutions Architect Associate (In Progress)</li>
+        </ul>
+    </section>
 
-    <script src="script.js"></script>
+    <section class="card">
+        <h2>AWS Certification Progress</h2>
+
+        <div class="progress-bar">
+            <div class="progress" id="awsProgress"></div>
+        </div>
+
+        <p>Estimated Progress: 85%</p>
+    </section>
+
+    <section class="card">
+        <h2>Professional Experience</h2>
+
+        <h3>Network Engineer</h3>
+        <p>
+            Supporting NMCI/NGEN infrastructure for the Department of the Navy.
+            Responsible for troubleshooting enterprise network issues,
+            maintaining network services, and supporting critical mission systems.
+        </p>
+
+        <h3>United States Marine Corps Sergeant</h3>
+        <p>
+            Served six years as a Data Systems Administrator and supervisor.
+            Managed enterprise IT systems, supported operational missions, and
+            led Marines in technical and administrative environments.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Technical Skills</h2>
+
+        <div class="skills">
+            <span>AWS</span>
+            <span>VPC</span>
+            <span>EC2</span>
+            <span>S3</span>
+            <span>IAM</span>
+            <span>Lambda</span>
+            <span>DynamoDB</span>
+            <span>CloudFront</span>
+            <span>Networking</span>
+            <span>Cisco</span>
+            <span>Linux</span>
+            <span>Git</span>
+            <span>GitHub</span>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Projects</h2>
+
+        <h3>Cloud Resume Challenge</h3>
+        <p>
+            Serverless resume website hosted on AWS using S3, CloudFront,
+            Lambda, API Gateway, and DynamoDB.
+        </p>
+
+        <h3>AWS Infrastructure Projects</h3>
+        <p>
+            Hands-on cloud projects demonstrating networking, automation,
+            monitoring, and Infrastructure as Code principles.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Visitor Counter</h2>
+        <p>Total Visitors:</p>
+        <h3 id="visitorCount">Loading...</h3>
+    </section>
+
+</section>
+
+<footer>
+    <p>Built with AWS | GitHub | Cloud Resume Challenge</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
