@@ -1,119 +1,194 @@
+/* ---------- Global Styles ---------- */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f6f9;
-  color: #333;
-  line-height: 1.6;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
 }
 
+/* ---------- Header ---------- */
+
 header {
-  background-color: #232f3e;
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
+    background: linear-gradient(135deg, #232f3e, #37475a);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
 }
 
 header h1 {
-  margin-bottom: 10px;
-  font-size: 2.5rem;
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
 header p {
-  font-size: 1.1rem;
-  margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #d5dce5;
+    margin-bottom: 20px;
 }
 
 .contact {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  font-size: 0.95rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.95rem;
 }
+
+.contact span {
+    background-color: rgba(255,255,255,.1);
+    padding: 8px 14px;
+    border-radius: 20px;
+}
+
+/* ---------- Layout ---------- */
 
 .container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 20px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
 }
 
+/* ---------- Cards ---------- */
+
 .card {
-  background: white;
-  padding: 24px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,.08);
+
+    transition: transform .2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
 }
 
 .card h2 {
-  margin-bottom: 15px;
-  color: #232f3e;
-  border-bottom: 2px solid #ff9900;
-  padding-bottom: 8px;
+    color: #232f3e;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #ff9900;
 }
 
 .card h3 {
-  margin-top: 15px;
-  color: #232f3e;
+    color: #232f3e;
+    margin-top: 18px;
+    margin-bottom: 8px;
 }
 
-ul {
-  margin-left: 20px;
-  margin-top: 10px;
-}
-
-li {
-  margin-bottom: 8px;
-}
+/* ---------- Experience ---------- */
 
 .job {
-  margin-bottom: 25px;
+    margin-bottom: 30px;
+}
+
+.job:last-child {
+    margin-bottom: 0;
 }
 
 .date {
-  font-weight: bold;
-  color: #555;
-  margin-bottom: 8px;
+    color: #666;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
+/* ---------- Lists ---------- */
+
+ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* ---------- Skills ---------- */
+
 .skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
 }
 
 .skills span {
-  background: #232f3e;
-  color: white;
-  padding: 8px 12px;
-  border-radius: 5px;
-  font-size: 0.9rem;
+    background-color: #232f3e;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: .9rem;
+    font-weight: 500;
 }
+
+/* ---------- Project Highlights ---------- */
+
+.project-list {
+    margin-top: 15px;
+}
+
+.project-list li {
+    margin-bottom: 10px;
+}
+
+/* ---------- Visitor Counter ---------- */
+
+#visitorCount {
+    font-size: 2rem;
+    color: #ff9900;
+    margin-top: 10px;
+}
+
+/* ---------- Footer ---------- */
 
 footer {
-  text-align: center;
-  padding: 20px;
-  background: #232f3e;
-  color: white;
+    background-color: #232f3e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
 }
 
+/* ---------- Responsive ---------- */
+
 @media (max-width: 768px) {
-  header h1 {
-    font-size: 2rem;
-  }
 
-  .card {
-    padding: 18px;
-  }
+    header {
+        padding: 40px 20px;
+    }
 
-  .contact {
-    flex-direction: column;
-    gap: 5px;
-  }
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .skills {
+        gap: 8px;
+    }
+
+    .skills span {
+        font-size: .85rem;
+    }
 }
