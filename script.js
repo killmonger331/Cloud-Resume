@@ -5,12 +5,28 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Visitor Counter Placeholder
-    const visitorCount = document.getElementById("visitorCount");
+// Visitor Counter
+const visitorCount = document.getElementById("visitorCount");
 
-    if (visitorCount) {
-        visitorCount.textContent = "AWS Integration Pending";
-    }
+if (visitorCount) {
+
+    fetch(
+        "https://tj0uo69y77.execute-api.us-east-1.amazonaws.com/default/count"
+    )
+    .then(response => response.text())
+    .then(count => {
+
+        visitorCount.textContent = count;
+
+    })
+    .catch(error => {
+
+        console.error(error);
+
+        visitorCount.textContent = "Error";
+
+    });
+}
 
     // Fade-in Animation
     const cards = document.querySelectorAll(".card");
