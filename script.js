@@ -13,10 +13,10 @@ if (visitorCount) {
     fetch(
         "https://tj0uo69y77.execute-api.us-east-1.amazonaws.com/default/count"
     )
-    .then(response => response.text())
-    .then(count => {
+    .then(response => response.json())
+    .then(data => {
 
-        visitorCount.textContent = count;
+        visitorCount.textContent = data.body;
 
     })
     .catch(error => {
