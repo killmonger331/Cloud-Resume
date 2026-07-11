@@ -1,4 +1,4 @@
-# Cloud Resume Challenge
+# Cloud Resume 
 
 ## Overview
 
@@ -14,15 +14,6 @@ Technologies used:
 - IAM
 - GitHub
 
-## Current Status
+## Here's my Link
 
-Phase 1:
-- Static Resume Website
-
-Upcoming:
-
-Phase 2:
-- Visitor Counter with Lambda and DynamoDB
-
-Phase 3:
-- Infrastructure as Code using Terraform
+http://richardmorales-cloud-resume.s3-website-us-east-1.amazonaws.com
